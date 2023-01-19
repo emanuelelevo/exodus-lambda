@@ -26,7 +26,7 @@
     "disable_existing_loggers": "False",
     "formatters": {
       "default": {
-        "format": "$EXODUS_LOG_FORMAT",
+        "format": "{\"time\":\"%(asctime)s\",\"level\":\"%(levelname)s\",\"aws\":\"%(aws_request_id)s\",%(message)s}",
         "datefmt": "%Y-%m-%d %H:%M:%S"
       }
     },
